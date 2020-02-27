@@ -1,0 +1,10 @@
+{
+    "animals": [
+        {"name": "Fluffykins", "species": "rabbit", "weight": 0.3},
+        {"name": "Caro", "species": "dog", "weight": 6.1},
+        {"name": "Hamilton", "species": "dog", "weight": 35.7},
+        {"name": "Harold", "species": "fish", "weight": 0.1},
+        {"name": "Ursula", "species": "cat", "weight": 8.2},
+        {"name": "Jimmy", "species": "fish", "weight": 1.2}
+    ]
+}
