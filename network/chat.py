@@ -27,7 +27,7 @@ class Chat:
 			message = param.encode()
 			totalsent = 0
 			while totalsent < len ( message ) :
-				sent = self . __s . sendto ( message [ totalsent :] , self . __address )
+				sent = self.__s.sendto(message[totalsent:] , self.__address)
 				totalsent += sent
 
 	def _receive ( self ) :
@@ -51,12 +51,12 @@ class Chat:
 
 		while self.__running :
 			line = sys.stdin.readline().rstrip()+' '
-			command = line [:line.index(' ')]
-			param = line [ line . index (' ') +1:]. rstrip ()
+			command = line[:line.index(' ')]
+			param = line[line.index (' ') +1:].rstrip ()
 			if command in handlers :
-				handlers [ command ]() if param == '' else handlers [ command ]( param )
+				handlers[command]() if param == '' else handlers[command](param)
 			else :
-				print ('Unknown command :', command )
+				print('Unknown command :', command)
 
 if len(sys.argv) > 1:
 	port = int(sys.argv[1])
